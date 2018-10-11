@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="index_style.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+</head>
+<body>
+
+<div class="col-md-6 m-auto">
+<h1>My Register book</h1>
+</div>
+<div class="w-50 m-auto text-center">
+<button class="btn btn-primary" type="button" onclick="collapse()">
+    Add Your Data
+  </button>
+</div>
+
+<div id="collapseExample" class="test">
+  <div class="card card-body">
+ 
+<form class="form-group w-50 m-auto">
+  <div class="row">
+    <div class="col-md-12 mb-3">
+      <input onkeydown="validate1()" type="text" class="form-control" placeholder="name">
+
+      <div id="invalid1" class="card bg-danger w-50">Must include Uppercase in the first</div>
+      <div id="valid1" class="card bg-success w-50">valid name</div>
+
+    </div>
+    <div class="col-md-12 mb-3">
+      <input onkeydown="validate2()" type="number" class="form-control" placeholder="phone">
+
+      <div id="invalid2" class="card bg-danger w-75">Must include the egyption mobile key number</div>
+      <div id="valid2" class="card bg-success w-50">valid number</div>
+
+    </div>
+    <div class="col-md-12 mb-3">
+      <input onkeydown="validate3()" type="email" class="form-control" placeholder="e-mail">
+
+      <div id="invalid3" class="card bg-danger w-50">Must include (a-z .-_) @ (domain).(com or org .. etc..)</div>
+      <div id="valid3" class="card bg-success w-50">Valid Email</div>
+
+    </div>
+    <div class="col-md-12 mb-3">
+      <input type="text" class="form-control" placeholder="location">
+    </div>
+  </div>
+</form>   
+<div class="w-50 m-auto text-center">
+<button type="submit" onclick="addData();" class="btn btn-primary p-2" >Add data</button>
+</div>
+</div>
+</div>
+
+<div class="container mt-5">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Location</th>
+    </tr>
+  </thead>
+  <tbody id="body_table">
+    
+  </tbody>
+</table>
+</div>
+
+
+ <!-- JS Links -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="mine.js"></script>
+</body>
+</html>
