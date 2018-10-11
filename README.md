@@ -1,4 +1,4 @@
-# regular-exprissen
+# regular-expression
 it's sample for validate if the inputs values are correct or not as you set the condition.
 
 still under modifying
